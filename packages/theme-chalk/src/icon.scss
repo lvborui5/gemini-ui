@@ -1,0 +1,49 @@
+@import "common/var";
+
+@font-face {
+  font-family: 'gemini-icons';
+  src: url('#{$--font-path}/gemini-icons.woff') format('woff'), /* chrome, firefox */
+       url('#{$--font-path}/gemini-icons.ttf') format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  font-weight: normal;
+  font-style: normal
+}
+
+[class^="g-icon-"], [class*=" g-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'gemini-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: baseline;
+  display: inline-block;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.g-icon-info:before { content: "\e61a"; }
+.g-icon-caret-top:before { content: "\E60C"; }
+
+.g-icon-loading {
+  animation: rotating 2s linear infinite;
+}
+
+.g-icon--right {
+  margin-left: 5px;
+}
+.g-icon--left {
+  margin-right: 5px;
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

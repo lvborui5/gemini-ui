@@ -1,0 +1,5 @@
+{
+  "alert": "./packages/alert/index.js",
+  "icon": "./packages/icon/index.js",
+  "scrollbar": "./packages/scrollbar/index.js"
+}
