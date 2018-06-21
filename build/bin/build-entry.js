@@ -66,7 +66,7 @@ module.exports = {
 module.exports.default = module.exports;
 `;
 
-delete Components.font; // 
+delete Components.font; //
 
 var ComponentNames = Object.keys(Components); // 组件名称
 
